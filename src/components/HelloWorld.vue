@@ -1,32 +1,40 @@
 <template>
-    <h1>{{ msg }}</h1>
+    <el-row>
+        <el-button>Default</el-button>
+        <el-button type="primary">Primary</el-button>
+        <el-button type="success">Success</el-button>
+        <el-button type="info">Info</el-button>
+        <el-button type="warning">Warning</el-button>
+        <el-button type="danger">Danger</el-button>
+    </el-row>
 
-    <p>
-        Recommended IDE setup:
-        <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-        +
-        <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur" target="_blank"> Vetur </a>
-        or
-        <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-        (if using
-        <code>&lt;script setup&gt;</code>)
-    </p>
+    <el-row>
+        <el-button plain>Plain</el-button>
+        <el-button type="primary" plain>Primary</el-button>
+        <el-button type="success" plain>Success</el-button>
+        <el-button type="info" plain>Info</el-button>
+        <el-button type="warning" plain>Warning</el-button>
+        <el-button type="danger" plain>Danger</el-button>
+    </el-row>
 
-    <p>See <code>README.md</code> for more information.</p>
+    <el-row>
+        <el-button round>Round</el-button>
+        <el-button type="primary" round>Primary</el-button>
+        <el-button type="success" round>Success</el-button>
+        <el-button type="info" round>Info</el-button>
+        <el-button type="warning" round>Warning</el-button>
+        <el-button type="danger" round>Danger</el-button>
+    </el-row>
 
-    <p>
-        <a href="https://vitejs.dev/guide/features.html" target="_blank"> Vite Docs </a>
-        |
-        <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-    </p>
-
-    <button type="button" @click="count++">count is: {{ count }}</button>
-    <p>
-        Edit
-        <code>components/HelloWorld.vue</code> to test hot module replacement.
-    </p>
+    <el-row>
+        <el-button icon="el-icon-search" circle></el-button>
+        <el-button type="primary" icon="el-icon-edit" circle></el-button>
+        <el-button type="success" icon="el-icon-check" circle></el-button>
+        <el-button type="info" icon="el-icon-message" circle></el-button>
+        <el-button type="warning" icon="el-icon-star-off" circle></el-button>
+        <el-button type="danger" icon="el-icon-delete" circle></el-button>
+    </el-row>
 </template>
-
 <script lang="ts">
     import { ref, defineComponent } from 'vue';
     export default defineComponent({
